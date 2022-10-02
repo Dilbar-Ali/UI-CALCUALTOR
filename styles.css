@@ -1,11 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
-.container{
-width: 100%;
+.container {
+   width: 100%;
 
 }
 
@@ -14,37 +14,38 @@ width: 100%;
 /* ______________________________NAVBAR ____________________________ */
 
 
-header{
-    display: flex;
-    justify-content: center;
-    background-color: orangered;
+header {
+   display: flex;
+   justify-content: center;
+   background-color: orangered;
 }
 
-#navbar{
-    display: flex;
-    height: 90px;
-    background-color: orangered;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
+#navbar {
+   display: flex;
+   height: 90px;
+   background-color: orangered;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
 }
 
-.Nav_link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    text-decoration: none;
+.Nav_link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 4rem;
+   text-decoration: none;
 }
 
-a{
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-    font-size: 24px;
+a {
+   text-decoration: none;
+   font-weight: 500;
+   color: white;
+   font-size: 24px;
 }
-li{
-    list-style: none;
+
+li {
+   list-style: none;
 }
 
 
@@ -52,147 +53,304 @@ li{
 
 /* ____________________________section1 Portion __________________________________ */
 
-.section1{
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgba(16, 126, 126, 0);  */
-    background-position: center;
-    background-size: cover;
+.section1 {
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* background-color: rgba(16, 126, 126, 0);  */
+   background-position: center;
+   background-size: cover;
 
-    line-height: 3rem;
-background-image: url(./img/smartphone-1894723_1920.jpg);
-
-}
-.se{
-    background-color: rgba(0, 0, 0, 0.859);
-    width: 100%;
-height: 90vh;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-
+   line-height: 3rem;
+   background-image: url(./img/smartphone-1894723_1920.jpg);
 
 }
 
+.se {
+   background-color: rgba(0, 0, 0, 0.859);
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 
-.section1 h1{
-    font-size: 38px;
-    color: orangered;
+
 }
 
-.section1 p{
-    font-size: 20px;
-    line-height: 2rem;
-    margin-bottom: 25px;
-    color: white;
-    /* color: ; */
+
+.section1 h1 {
+   font-size: 38px;
+   color: orangered;
 }
 
-.section1 input{
-    padding: 15px 10px;;
-    /* line-height: 1.5rem; */
-    
-}
-
-.section1 button{
-    padding: 15px 60px;
-}
-
-.sec_btns{
-     display: flex;
-     flex-direction: row;
-     gap: 4rem;
-     margin: 10px 0px 30px 0px;
+.section1 p {
+   font-size: 20px;
+   line-height: 2rem;
+   margin-bottom: 25px;
+   color: white;
+   /* color: ; */
 }
 
 
 
+
+.sec1_btn {
+   background-color: orangered;
+   padding: 16px 60px;
+   color: white;
+   font-size: 17px;
+}
+
+
+
+
+.sec-btns input , select{
+   padding: 15px 25px ;
+   margin: 0px 20px;
+  
+}
 
 
 /* ===========================section2=========================
  */
 
 
- .section2{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 9rem;
- }
+.section2 {
+   width: 100%;
+   height: 60vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 9rem;
+}
 
- .card{
-    width: 35%;
-    text-align: center;
-    line-height: 2rem;
- }
+.card {
+   width: 35%;
+   text-align: center;
+   line-height: 2rem;
+}
 
- .card h1,h2{
-    color: orangered;
- }
-
-
- /* =========================Section3================== */
-
- .section3{
-    margin-top: 40px;
-    background-color:#d9d9d9;
-    height: 80vh;
- }
- .section3 h1{
-    text-align: center;
-    color: orangered;
-    padding-top:150px;
- }
+.card h1,
+h2 {
+   color: orangered;
+}
 
 
+/* =========================Section3================== */
 
+.section3 {
+   /* margin-top: 40px; */
+   background-color: #d9d9d9;
+   height: 150vh;
+}
 
+.section3 h1 {
+   text-align: center;
+   color: orangered;
+   padding-top: 150px;
+}
 
 
 
 
- /* ====================================Section2================= */
-
- .card .icon i{
-    font-size: 100px;
-    color: orangered;
-    padding: 10px;
-    cursor: pointer;
- }
 
 
- .sec3-main{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    width: 70%;
-    margin-left: 100px;
-    margin-top: 100px;
-    background-color: white;
-    padding: 13px;
-    /* justify-content: center; */
- }
 
- .sec3-main i{
-    font-size: 30px;
-    cursor: pointer;
- }
 
- .after{
- margin-top: -10px;
-position: absolute;
-height: 100px;
-width: 100%;
-display: none;
- }
+/* ====================================Section2================= */
 
- #before2{
-    margin-top: -100px;
-    /* margin-bottom: ; */
- }
+.card .icon i {
+   font-size: 100px;
+   color: orangered;
+   padding: 10px;
+   cursor: pointer;
+}
+
+
+.sec3-main {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   width: 70%;
+   margin-left: 100px;
+   margin-top: 100px;
+   background-color: white;
+   padding: 13px;
+   /* justify-content: center; */
+}
+
+.sec3-main i {
+   font-size: 30px;
+   cursor: pointer;
+}
+
+.after {
+   margin-top: -10px;
+   position: absolute;
+   height: 100px;
+   width: 100%;
+   display: none;
+}
+
+#before2 {
+   /* margin-top: -140px; */
+   /* margin-bottom: ; */
+}
+
+.sec3-main2,
+.sec3-main3,
+.sec3-main4,
+.sec3-main4,
+.sec3-main4,
+.sec3-main5,
+.sec3-main6 {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   width: 70%;
+   margin-left: 100px;
+   margin-top: 40px;
+   background-color: white;
+   padding: 13px;
+   /* justify-content: center; */
+}
+
+.sec3-main2 i,
+.sec3-main3 i,
+.sec3-main4 i,
+.sec3-main5 i,
+.sec3-main6 i,
+.sec3-main2 i {
+   font-size: 30px;
+   cursor: pointer;
+}
+
+
+
+.sction4 {
+   height: 50vh;
+
+}
+
+.section4 h1 {
+   color: orangered;
+   padding-top: 100px;
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+
+
+.form-sec {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   background-color: #d9d9d9;
+   height: 70vh;
+}
+
+.content-form {
+   width: 50%;
+
+}
+
+.form {
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   padding: 20px;
+
+
+}
+
+.form input {
+   padding: 10px;
+   margin-right: 50px;
+}
+
+.form input,
+textarea,
+button {
+   margin-top: 15px;
+}
+
+.form button {
+   padding: 10px 90px;
+   background-color: orangered;
+   border: none;
+   border-radius: 4px;
+}
+
+.content-form h2 {
+   font-size: 35px;
+   line-height: 2em;
+}
+
+.content-form p {
+   font-size: 25px;
+}
+
+
+.section5 {
+   height: 50vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.section5 h1 {
+   color: orangered;
+   font-size: 35px;
+   line-height: 2em;
+}
+
+.section5 p {
+   font-size: 22px;
+   line-height: 1.7em;
+   width: 70%;
+   text-align: center;
+
+}
+
+
+.fotter {
+   height: 30vh;
+   background-color: orangered;
+   /* text-align: center; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.fotter p {
+   font-size: 20px;
+   color: white;
+}
+
+.fotter .fi i {
+   font-size: 40px;
+   color: rgb(0, 102, 255);
+}
+
+.fotter .second i {
+   font-size: 40px;
+   color: rgb(207, 3, 166);
+}
+
+.fotter .icons {
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   /* margin-top: 200px; */
+   line-height: 2em
+}
