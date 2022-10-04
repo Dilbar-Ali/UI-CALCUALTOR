@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+
   <title>Document</title>
 </head>
 
@@ -30,16 +32,23 @@
           <img src="./img/apple-touch-icon-114x114.png" alt="" height="100px">
 
         </div>
-        <ul class="Nav_link">
+        <div class="menu_list" id="menu_small">
+          <ul class="Nav_link">
 
-          <li><a href="">Calculator</a></li>
-          <li><a href="">Tax Slabs</a></li>
-          <li><a href="">Contect</a></li>
-          <li><a href="">About</a></li>
+            <li><a href="">Calculator</a></li>
+            <li><a href="">Tax Slabs</a></li>
+            <li><a href="">Contect</a></li>
+            <li><a href="">About</a></li>
 
-        </ul>
+          </ul>
+        </div>
+       
 
       </div>
+
+      <a href="" id="iconbar" onclick="responsive_menu()">
+        <i class="uil uil-bars"></i>
+      </a>
     </header>
 
 
@@ -52,18 +61,18 @@
 
         <h1>TAX CALCULATOR PAKISTAN 2022-2023</h1>
         <p>This is latest tax calculator as per 2022-2023 budget presented by Government Of Pakistan. </p>
-        
+
         <div class="sec-btns">
-          <input type="text" placeholder="Enter Amount Here " >
-          <select name="Duration " id="Duration" placeholder="Duration"style=" padding: 16px 90px; " >
+          <input type="text" placeholder="Enter Amount Here ">
+          <select name="Duration " id="Duration" placeholder="Duration" style=" padding: 16px 90px; ">
             <option value="Monthly">Monthly</option>
             <option value="Annually">Annually</option>
 
           </select>
-          <button class="sec1_btn" >Calculate</button>
+          <button class="sec1_btn">Calculate</button>
         </div>
 
-        <p><span style="margin-top: 30px;">* Last updated : 30th June 2022 Check our Terms & Conditions</span></p>
+        <p><span style="margin-top: 70px;">* Last updated : 30th June 2022 Check our Terms & Conditions</span></p>
 
       </div>
     </div>
@@ -244,6 +253,9 @@
 
 
 
+    <!-- =============================Section 4============================ -->
+
+
 
 
     <div class="section4">
@@ -279,17 +291,28 @@
 
 
 
+    <!-- ==============================Section5============================ -->
+
+
+
+
     <div class="section5">
 
 
       <h1>About Us</h1>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates alias repudiandae dolorem. Ullam blanditiis neque voluptatum nam, voluptatem laudantium architecto harum unde sunt asperiores voluptate dolores quae quas quo.
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates alias repudiandae dolorem. Ullam
+        blanditiis neque voluptatum nam, voluptatem laudantium architecto harum unde sunt asperiores voluptate dolores
+        quae quas quo.
 
       </p>
 
     </div>
 
+
+
+
+    <!-- ============================Fotter=============================== -->
 
 
     <div class="fotter">
@@ -394,6 +417,18 @@
 
     })
 
+
+
+  //  _______________________________ responsive_menu portion ___________________________
+
+  function responsive_menu(){
+
+    var e=document.getElementById('menu_small');
+
+    if(e.className===)
+
+  }
+  
 
   </script>
 

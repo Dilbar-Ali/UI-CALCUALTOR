@@ -2,6 +2,8 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+font-family: sans-serif;
+overflow: hidden;
 }
 
 .container {
@@ -49,6 +51,17 @@ li {
 }
 
 
+#iconbar{
+   color: white;
+   font-size: 2rem;
+   position: absolute;
+   top: 25px;
+   right: 25px;
+   opacity: 0;
+   visibility: hidden;
+}
+
+
 
 
 /* ____________________________section1 Portion __________________________________ */
@@ -88,7 +101,7 @@ li {
 
 .section1 p {
    font-size: 20px;
-   line-height: 2rem;
+   line-height: 6rem;
    margin-bottom: 25px;
    color: white;
    /* color: ; */
@@ -250,7 +263,7 @@ h2 {
    align-items: center;
    gap: 3rem;
    background-color: #d9d9d9;
-   height: 70vh;
+   height: 75vh;
 }
 
 .content-form {
@@ -353,4 +366,52 @@ button {
    align-items: center;
    /* margin-top: 200px; */
    line-height: 2em
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================Media Query ========================== */
+
+@media (min-width : 1200px) {
+
+   
+
+}
+
+
+@media (max-width : 990px) {
+
+   .nav_logo{
+      height:90px;
+      text-align: center;
+   }
+
+   .menu_list{
+      width: 100%;
+      text-align: left;
+      
+
+   }
+
+   .menu_list ul{
+      opacity: 0;
+      visibility: hidden;
+   }
+   #iconbar{
+      opacity: 1;
+      visibility: visible;
+   }
 }
