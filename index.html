@@ -60,16 +60,16 @@
         <p>This is latest tax calculator as per 2022-2023 budget presented by Government Of Pakistan. </p>
 
         <div class="sec-btns">
-          <input type="text" placeholder="Enter Amount Here ">
+          <input type="text" placeholder="Enter Amount Here " id="InputData">
           <select name="Duration " id="Duration" placeholder="Duration">
-            <option value="Monthly">Monthly</option>
-            <option value="Annually">Annually</option>
+            <option value="Monthly" id="Monthly">Monthly</option>
+            <option value="Annually" id="Annually">Annually</option>
 
           </select>
-          <button class="sec1_btn">Calculate</button>
+          <button class="sec1_btn" id="Calculate"  onclick="calcIncomeTax()" >Calculate</button>
         </div>
 
-        <p><span style="margin-top: 80px;">* Last updated : 30th June 2022 Check our Terms & Conditions</span></p>
+        <p><span style="margin-top: 80px">* Last updated : 30th June 2022 Check our Terms & Conditions</span></p>
 
       </div>
     </div>
@@ -422,8 +422,67 @@
 
 
 
+//  =========================For Calculation ========================================
 
 
+
+
+function calcIncomeTax() {
+
+  
+let InputData=document.getElementById("InputData").value;
+let Duration=document.getElementById("Duration").value;
+
+
+
+    if (InputData <= 0 || InputData =="" )  {
+      alert("Please enter Any Amount");
+        document.getElementById("total").innerHTML = (0.00);
+      
+      }
+      else if (InputData > 0 && InputData < 100000) {
+        var incomeTax = 0;
+        alert("Your Income Tax is  :   "+ incomeTax + "  Thanks ");
+    }    
+    else if (InputData > 100000 && InputData < 500000) {
+
+      if(Duration=="Monthly"){
+        var incomeTax = InputData * (5/100);
+        alert("Your Income Tax is  :   "+ incomeTax);
+      
+      }
+      else if(Duration=="Annually"){
+        var incomeTax = InputData * (7/100);
+        alert("Your Income Tax is  :   "+ incomeTax);
+      
+      }
+    } 
+    else if (InputData >= 500000 && InputData < 1000000) {
+      if(Duration=="Monthly"){
+        var incomeTax = InputData * (9/100);
+        alert("Your Income Tax is  :   "+ incomeTax);
+      
+      }
+      else if(Duration=="Annually"){
+        var incomeTax = InputData * (12/100);
+        alert("Your Income Tax is  :   "+ incomeTax);
+      
+      }
+    } 
+    else   {if(Duration=="Monthly"){
+        var incomeTax = InputData * (15/100);
+        alert("Your Income Tax is  :   "+ incomeTax);
+      
+      }
+      else if(Duration=="Annually"){
+        var incomeTax = InputData * (20/100);
+        alert("Your Income Tax is  :   "+ incomeTax);
+      
+      }
+    } 
+ 
+
+  }
   </script>
 
 
